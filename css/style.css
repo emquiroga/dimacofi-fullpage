@@ -888,8 +888,10 @@ a {
 
 .documento-1-section,
 .documento-2-section,
-.documento-3-section {
-  padding-top: 4rem;
+.documento-3-section,
+.inicio-section,
+.compra-section {
+  padding-top: 6rem;
 }
 
 .documento-1-section .form-container form {
