@@ -39,130 +39,135 @@
         rel="stylesheet"
         href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
       <!-- CDNs  -->
       <link rel="stylesheet" href="../css/style.css" />
       <title>Dimacofi | Documento 1</title>
     </head>
   </head>
   <body>
-    <nav class="navbar navbar-light">
-      <div class="container-fluid">
-        <img src="../assets/logo-contratos.png" alt="Logo" class="logo" />
-        <div class="user">
-          <img src="../assets/svg/usuario.svg" alt="User" class="user-img" />
-          <p class="user-name">(Nombre User)</p>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#userMenu"
-          aria-controls="userMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="../assets/svg/burger-menu.svg" alt="" />
-        </button>
-        <div class="collapse navbar-collapse" id="userMenu">
-          <div class="menu-container">
-            <div class="profile-div red-bg white-text mt-3" role="alert">
-              PERFIL
-            </div>
-            <ul class="navbar-nav mb-2 mt-3 mb-lg-3">
-              <li class="nav-item mt-3 mb-3">
-                <h6>DATOS PERSONALES</h6>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/editar.svg" alt="" />
-                  <p>Editar datos</p>
-                </a>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/password.svg" alt="" />
-                  <p>Modificar contraseña</p>
-                </a>
-              </li>
-              <div class="divider-small"></div>
-              <li class="nav-item mt-3 mb-3">
-                <h6>COMPRAS</h6>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/carrito.svg" alt="" />
-                  <p>Comprar firmas</p>
-                </a>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/facturas.svg" alt="" />
-                  <p>Facturas</p>
-                </a>
-              </li>
-              <div class="divider-small"></div>
-              <li class="nav-item mt-3 mb-3">
-                <h6>NOTIFICACIONES</h6>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/mensajes.svg" alt="" />
-                  <p>Mensajes</p>
-                </a>
-              </li>
-              <div class="divider-small"></div>
-              <li class="nav-item mt-3 mb-3">
-                <h6>MIS DOCUMENTOS</h6>
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/estado.svg" alt="" />
-                  <p>Estado de envíos</p>
-                </a>
-              </li>
-              <div class="divider-small"></div>
-              <li class="nav-item mt-3 mb-3">
-                <a href="#" class="single-field">
-                  <img src="../assets/svg/logout.svg" alt="" />
-                  <p class="red-text">Cerrar Sesión</p>
-                </a>
-              </li>
-              <div class="divider-small"></div>
-            </ul>
-            <img src="../assets/logo-contratos.png" alt="Logo" class="logo" />
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex navbar-brand">
+        <a href="index.html" class="logo me-auto"
+          ><img
+            src="../assets/logo-contratos.png"
+            alt="Dimacofi Logo"
+            class="img-fluid"
+        /></a>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul clas="d-flex justify-content-between">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="faq.html">preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mi perfil
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-user"></i> Editar Datos</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-key"></i> Modificar contraseña</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-cart-shopping"></i> Compras</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-file"></i> Estado de documento</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-right-from-bracket"></i> Salir</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a href="login.html" class="btn-sesion">Cerrar Sesión</a>
+      </div>
+    </header>
+    <!-- ====== End Header ====== -->
+    <!-- ====== Main ====== -->
+    <main>
+      <section class="documento-1-section">
+        <div class="progress-wrapper">
+          <div class="progress-step step-completed">
+            <p>Seleccionar documento</p>
+            <span>01</span>
+          </div>
+          <div class="progress-step">
+            <p>Subir documento</p>
+            <span>02</span>
+          </div>
+          <div class="progress-step">
+            <p>Revisar y enviar</p>
+            <span>03</span>
           </div>
         </div>
-      </div>
-    </nav>
-    <section class="documento-1-section">
-      <div class="progress-wrapper">
-        <div class="progress-step step-completed">
-          <p>Seleccionar documento</p>
-          <span>01</span>
-        </div>
-        <div class="progress-step">
-          <p>Subir documento</p>
-          <span>02</span>
-        </div>
-        <div class="progress-step">
-          <p>Revisar y enviar</p>
-          <span>03</span>
-        </div>
-      </div>
-      <div class="form-container">
-        <form action="">
-          <h1>Documento Masivos</h1>
-          <div class="drag-container mt-3">
-            <!-- Ajustar el tamaño del icono del btn, que si bien esta con estilo -no lo toma -->
-            <div class="drag-wrapper">
-              <figure>
-                <img
-                  src="../assets/svg/adjuntar.svg"
-                  alt="Adjuntar Documento"
-                />
-              </figure>
-              <p>Subir plantilla</p>
+        <div class="form-container">
+          <form action="">
+            <h1>Documento Masivos</h1>
+            <div class="drag-container mt-3">
+              <!-- Ajustar el tamaño del icono del btn, que si bien esta con estilo -no lo toma -->
+              <div class="drag-wrapper">
+                <figure>
+                  <img
+                    src="../assets/svg/adjuntar.svg"
+                    alt="Adjuntar Documento"
+                  />
+                </figure>
+                <p>Subir plantilla</p>
+              </div>
+              <div class="drag-wrapper">
+                <figure>
+                  <img
+                    src="../assets/svg/añadir.svg"
+                    alt="Adjuntar Documento"
+                  />
+                </figure>
+                <p>Arrastrar aquí</p>
+              </div>
             </div>
-            <div class="drag-wrapper">
-              <figure>
-                <img src="../assets/svg/añadir.svg" alt="Adjuntar Documento" />
-              </figure>
-              <p>Arrastrar aquí</p>
-            </div>
-          </div>
-          <!-- BARRA DE CARGA PUEDE SER COMO ESTA HECHO O COMO EN FIGMA -->
-          <button class="red-button mt-3 small-button">Siguiente</button>
-        </form>
-      </div>
-    </section>
+            <!-- BARRA DE CARGA PUEDE SER COMO ESTA HECHO O COMO EN FIGMA -->
+            <button class="red-button mt-3 small-button">Siguiente</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ====== End Main ====== -->
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
@@ -235,13 +240,15 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <!-- ===== Buttons ===== -->
     <div id="preloader"></div>
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-
+    <!-- ===== End Buttons ===== -->
+    <!-- ===== Scripts ===== -->
     <!-- CDN Bundles -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -251,11 +258,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-
-    <!-- CDN Bundles -->
-
+    <!-- End CDN Bundles -->
     <!-- Template Main JS File-->
     <script src="../js/main.js"></script>
-    <!-- Template Main JS File-->
+    <!-- End Template Main JS File-->
+    <!-- ===== End Scripts ===== -->
   </body>
 </html>
