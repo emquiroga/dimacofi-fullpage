@@ -635,7 +635,7 @@ nav .single-field p {
 }
 
 .progress-wrapper {
-  width: 95%;
+  width: 100%;
   max-width: 700px;
   margin: auto;
   display: flex;
@@ -696,7 +696,10 @@ nav .single-field p {
 }
 
 .progress-wrapper .progress-step p {
+  min-height: 25px;
   font-size: 8px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 @media screen and (min-width: 48em) {
@@ -1023,6 +1026,7 @@ nav .single-field p {
 .back-to-top:hover {
   background: #000;
   font-weight: 600;
+  border: none !important;
   color: #fff;
 }
 
