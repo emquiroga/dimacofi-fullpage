@@ -126,6 +126,8 @@ a {
 }
 
 .form-container .login-form {
+  max-width: 400px;
+  padding: 1rem 3rem;
   gap: 1rem;
   background-color: white;
   border-radius: 1rem;
@@ -307,7 +309,7 @@ a {
 }
 
 .submit-button {
-  width: 90%;
+  width: 100%;
   max-width: 350px;
   margin: 1rem auto;
   padding: 0.5rem;
@@ -358,6 +360,7 @@ a {
 }
 .login-section .logo {
   width: 50%;
+  max-width: 200px;
   padding: 0.75rem 0;
 }
 .login-section h2 {
@@ -367,6 +370,21 @@ a {
   font-size: 28px !important;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+}
+.login-section .password-div {
+  position: relative;
+}
+.login-section .password-icon {
+  width: 22.5px;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .login-section .password-icon {
+    top: 40px;
+  }
 }
 .login-section ul {
   margin: 0;
