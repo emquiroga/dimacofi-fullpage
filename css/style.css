@@ -130,6 +130,13 @@ a {
   border-radius: 1rem;
   overflow: hidden;
 }
+.form-container .login-form {
+  gap: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
 @media screen and (min-width: 64em) {
   .form-container .register-form {
@@ -178,7 +185,7 @@ a {
 
 .compra-input {
   display: block;
-  width: 50px;
+  width: 90px;
   padding: 0.375rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
@@ -190,12 +197,6 @@ a {
   border-radius: 1rem;
   appearance: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media screen and (min-width: 64em) {
-  .compra-input {
-    width: 90px;
-  }
 }
 
 .compra-input:focus {
@@ -299,6 +300,25 @@ a {
   }
 }
 
+.submit-button {
+  width: 90%;
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-width: 0;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #e1251b;
+  color: #fff;
+  outline: none;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #ce0000;
+}
+
 .buttons-wrapper {
   display: flex;
   flex-flow: row;
@@ -319,6 +339,82 @@ a {
   flex-flow: row;
   align-items: center;
   gap: 1px;
+}
+
+.login-section {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-section .logo {
+  width: 50%;
+  padding: 0.75rem 0;
+}
+.login-section h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: left;
+  font-size: 28px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.login-section ul li {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #79797c;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-section a {
+  text-decoration: none;
+}
+
+.login-section span {
+  color: #ce0000;
+  font-weight: 500;
+}
+
+.login-section p a:hover {
+  text-decoration: underline;
+}
+
+.login-section p a:hover {
+  color: #ce0000;
+  text-decoration: none;
+}
+
+.recover-section {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recover-section .logo {
+  width: 50%;
+  padding: 0.75rem 0;
+}
+.recover-section h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: left;
+  font-size: 30px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.recover-section p {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: left;
+  font-size: 19px !important;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .register-section {
@@ -890,7 +986,9 @@ a {
 .documento-2-section,
 .documento-3-section,
 .inicio-section,
-.compra-section {
+.compra-section,
+.login-section,
+.recover-section {
   padding-top: 6rem;
 }
 
